@@ -87,7 +87,13 @@ SerialPort.prototype.write = function (buffer, callback) {
 		buffer = buffer2ArrayBuffer(buffer);
 	}
 
-	chrome.serial.send(this.connectionId, buffer, callback);
+	chrome.serial.send(this.connectionId, buffer, function(sendInfo){
+		if(sendInfo.error){
+			callback(sendInfo.error, sendInfo.bytesSent);
+		}else{
+			callback(null, sendInfo.bytesSent);
+		}
+	});
 };
 
 SerialPort.prototype.writeString = function (string, callback) {
