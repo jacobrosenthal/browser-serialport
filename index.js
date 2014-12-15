@@ -4,6 +4,9 @@ var EE = require('events').EventEmitter;
 var util = require('util');
 
 function SerialPort(path, options, openImmediately) {
+
+	EE.call(this);
+
 	console.log("SerialPort constructed.");
 
 	this.comName = path;
