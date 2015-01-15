@@ -1,6 +1,6 @@
 {
   "name": "chrome-serialport",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Fork of @garrows browser-serialport with full serialport compatibility.",
   "main": "index.js",
   "dependencies": {},
