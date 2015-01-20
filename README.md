@@ -1,1 +1,4 @@
-#We've reunited with [Glen's browser-serialport](https://github.com/garrows/browser-serialport) and are publishing on npmjs.org under browser-serialport. This nor chrome-serialport on npmjs.org will be updated any further.
+chrome-serialport is deprecated. See:
+
+- https://github.com/garrows/browser-serialport
+- https://npmjs.com/package/browser-serialport
